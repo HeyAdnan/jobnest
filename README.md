@@ -1,4 +1,4 @@
 # Jobnest
 
-Project in Action - [Jobnest]((https://jobnest-heyadnans-projects.vercel.app/))
+Project in Action - [Jobnest](https://jobnest-heyadnans-projects.vercel.app/)
 
