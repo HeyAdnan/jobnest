@@ -1,12 +1,11 @@
 import main from "../assets/images/newmain.png";
 import styled from "styled-components";
-import {Logo} from "../components";
-import{Link} from "react-router-dom";
+import { Logo } from "../components";
+import { Link } from "react-router-dom";
 function Landing() {
   return (
     <Wrapper>
       <nav>
-        
         <Logo />
       </nav>
       <div className="container page">
@@ -16,14 +15,15 @@ function Landing() {
             Job <span>tracking</span> app
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel quam
-            elementum pulvinar etiam. Fringilla phasellus faucibus scelerisque
-            eleifend donec pretium vulputate sapien. Auctor urna nunc id cursus
-            metus aliquam. Fermentum et sollicitudin ac orci phasellus egestas
-            tellus rutrum.
+            Welcome to JobNest! Your ultimate platform for creating and finding
+            job opportunities. Employers can effortlessly post vacancies, while
+            job seekers can easily apply for their dream roles. Experience
+            seamless hiring and job search like never before. Join us at JobNest
+            and nest your career to success!
           </p>
-          <Link to='/register' className="btn btn-hero">Login/Register</Link>
+          <Link to="/register" className="btn btn-hero">
+            Login/Register
+          </Link>
         </div>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
@@ -39,34 +39,33 @@ const Wrapper = styled.main`
     display: flex;
     align-items: center;
   }
-  .page{
+  .page {
     min-height: calc(100vh - var(--nav-height));
     display: grid;
     align-items: center;
     margin-top: -3rem;
   }
-  h1{
+  h1 {
     font-weight: 700;
-    span{
+    span {
       color: var(--primary-500);
     }
-
   }
-  p{
+  p {
     color: var(--grey-600);
   }
-  .main-img{
+  .main-img {
     display: none;
   }
-@media (min-width: 992px){  
-  .page{
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
+  @media (min-width: 992px) {
+    .page {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3rem;
+    }
+    .main-img {
+      display: block;
+    }
   }
-  .main-img{
-    display: block;
-  }
-}
-`
+`;
 
 export default Landing;
